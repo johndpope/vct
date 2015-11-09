@@ -2,7 +2,7 @@
 //  ZTVideoItemView.m
 //  ZAZOTest
 //
-//  Created by Vitaly Cherevaty on 10/29/15.
+//  Created by vc on 10/29/15.
 //  Copyright © 2015 Codeminders. All rights reserved.
 //
 
@@ -27,11 +27,11 @@ static NSString *const StatusKeyPath = @"status";
 {
     UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
     [self addGestureRecognizer:tapGestureRecognizer];
-    
+
     UILongPressGestureRecognizer *longPressGestureRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
     [self addGestureRecognizer:longPressGestureRecognizer];
-    
-    
+
+
     self.thumbnailImageView = [[UIImageView alloc] initWithFrame:self.bounds];
     [self addSubview:self.thumbnailImageView];
 }
@@ -40,7 +40,7 @@ static NSString *const StatusKeyPath = @"status";
 -(void)handleTap:(UIGestureRecognizer*)recognizer
 {
    // NSLog(@"%s", __func__);
-    
+
     if (self.isPlaying) {
         [self.eventHandler stopVideoAtIndex:self.index];
     } else {
@@ -51,7 +51,7 @@ static NSString *const StatusKeyPath = @"status";
 -(void)handleLongPress:(UIGestureRecognizer*)recognizer
 {
     //NSLog(@"%s", __func__);
-    
+
     if(recognizer.state == UIGestureRecognizerStateBegan){
         [self.eventHandler startVideoRecordingAtIndex:self.index];
     } else if(recognizer.state == UIGestureRecognizerStateEnded){
@@ -64,7 +64,7 @@ static NSString *const StatusKeyPath = @"status";
     if (self.videoFileURL) {
         [self loadVideoFromURL:self.videoFileURL];
     }
-    
+
     if (self.thumbnailImageFileURL) {
         self.thumbnailImageView.image = [UIImage imageWithContentsOfFile:[self.thumbnailImageFileURL path]];
     }
@@ -104,21 +104,21 @@ static NSString *const StatusKeyPath = @"status";
 {
     NSError *error;
     AVKeyValueStatus status = [asset statusOfValueForKey:TracksKey error:&error];
-    
+
     if (status == AVKeyValueStatusLoaded) {
-        
+
         //NSLog(@"Loaded!");
-        
+
         if (self.playerItem) {
             [[NSNotificationCenter defaultCenter] removeObserver:self
                                                             name:AVPlayerItemDidPlayToEndTimeNotification
                                                           object:self.playerItem];
-            
+
             [self.playerItem removeObserver:self forKeyPath:StatusKeyPath context:&ItemStatusContext];
             self.playerItem = nil;
-            
+
         }
-        
+
         self.playerItem = [AVPlayerItem playerItemWithAsset:asset];
         // ensure that this is done before the playerItem is associated with the player
         [self.playerItem addObserver:self forKeyPath:StatusKeyPath
@@ -135,19 +135,19 @@ static NSString *const StatusKeyPath = @"status";
 
         NSLog(@"ERROR:%s: The asset's tracks were not loaded:\n%@", __func__, [error localizedDescription]);
     }
-    
+
 }
 
 
 -(void)loadVideoFromURL:(NSURL*)fileURL
 {
     AVURLAsset *asset = [AVURLAsset URLAssetWithURL:fileURL options:nil];
-    
+
     __weak typeof(self) weakSelf = self;
-    
+
     [asset loadValuesAsynchronouslyForKeys:@[TracksKey] completionHandler:
      ^{
-         
+
          // Completion handler block.
          dispatch_async(dispatch_get_main_queue(),
                         ^{
@@ -165,7 +165,7 @@ static NSString *const StatusKeyPath = @"status";
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object
                         change:(NSDictionary *)change context:(void *)context {
-    
+
     if (context == &ItemStatusContext) {
         dispatch_async(dispatch_get_main_queue(),
                        ^{

@@ -2,7 +2,7 @@
 //  ZTVideosListInteractorTests.m
 //  ZAZOTest
 //
-//  Created by Vitaly Cherevaty on 11/2/15.
+//  Created by vc on 11/2/15.
 //  Copyright © 2015 Codeminders. All rights reserved.
 //
 
@@ -26,10 +26,10 @@
 
 - (void)setUp {
     [super setUp];
-    
+
     self.dataManager = [OCMockObject mockForClass:[ZTVideosListDataManager class]];
     self.output = [OCMockObject mockForProtocol:@protocol(ZTVideosListInteractorOutput)];
-    
+
     self.interactor = [ZTVideosListInteractor new];
     self.interactor.dataManager = self.dataManager;
     self.interactor.output = self.output;
@@ -39,18 +39,18 @@
 
     [self.dataManager verify];
     [self.output verify];
-    
+
     [super tearDown];
 }
 
 - (void)testGetVideoItems {
-    
+
     [[self.dataManager expect] videoItems];
     [self.interactor videoItems];
 }
 
 - (void)testUpdateVideoItem {
-    
+
     [[self.output expect] videoUpdatedSuccessfully:OCMOCK_ANY];
     [[self.dataManager expect] updateVideoItem:OCMOCK_ANY];
     [[self.dataManager expect] videoItems];

@@ -2,7 +2,7 @@
 //  ZTRootWireframe.m
 //  ZAZOTest
 //
-//  Created by Vitaly Cherevaty on 10/29/15.
+//  Created by vc on 10/29/15.
 //  Copyright © 2015 Codeminders. All rights reserved.
 //
 
@@ -15,7 +15,7 @@
 {
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     window.backgroundColor = [UIColor whiteColor];
-    
+
     ZTVideosListWireframe* wireframe = [ZTVideosListWireframe new];
     [wireframe presentVideosListControllerFromWindow:window];
 }

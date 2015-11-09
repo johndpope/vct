@@ -2,7 +2,7 @@
 //  ZTVideosListPresenterTests.m
 //  ZAZOTest
 //
-//  Created by Vitaly Cherevaty on 11/2/15.
+//  Created by vc on 11/2/15.
 //  Copyright © 2015 Codeminders. All rights reserved.
 //
 
@@ -26,14 +26,14 @@
 
 - (void)setUp {
     [super setUp];
-    
+
     self.presenter = [ZTVideosListPresenter new];
-    
+
     self.ui = [OCMockObject mockForProtocol:@protocol(ZTVideosListViewInterface)];
     self.wireframe = [OCMockObject mockForClass:[ZTVideosListWireframe class]];
     self.interactor = [OCMockObject mockForProtocol:@protocol(ZTVideosListInteractorInput)];
-    
-    
+
+
     self.presenter.userInterface = self.ui;
     self.presenter.wireframe = self.wireframe;
     self.presenter.interactor = self.interactor;
@@ -44,7 +44,7 @@
     [self.ui verify];
     [self.wireframe verify];
     [self.interactor verify];
-    
+
     [super tearDown];
 }
 
@@ -59,15 +59,15 @@
 }
 
 - (void)testVideoRecordingSucceded {
-    
+
     NSUInteger recordingItemIndex = 0;
-    
+
     [[self.interactor expect] updateVideoItemVideoPath:OCMOCK_ANY thumbnailPath:OCMOCK_ANY atIndex:recordingItemIndex];
     [self.presenter setValue:[NSNumber numberWithUnsignedInteger:recordingItemIndex] forKey:@"recordingItemIndex"];
-    
+
     id classMock = OCMClassMock([ZTVideoRecorder class]);
     OCMStub([classMock saveThumbnailWithFileURL:OCMOCK_ANY fromVideoURL:OCMOCK_ANY]).andReturn(YES);
-   
+
     [self.presenter videoRecordingSuccededWithVideoFileURL:OCMOCK_ANY];
 }
 

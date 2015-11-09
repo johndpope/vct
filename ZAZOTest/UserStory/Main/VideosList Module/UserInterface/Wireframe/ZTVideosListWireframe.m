@@ -2,7 +2,7 @@
 //  ZTVideosListWireframe.m
 //  ZAZOTest
 //
-//  Created by Vitaly Cherevaty on 10/29/15.
+//  Created by vc on 10/29/15.
 //  Copyright © 2015 Codeminders. All rights reserved.
 //
 
@@ -40,18 +40,18 @@
     ZTCoreDataStore *coreDataStore = [[ZTCoreDataStore alloc] init];
     ZTVideosListDataManager *dataManager = [[ZTVideosListDataManager alloc] init];
     dataManager.dataStore = coreDataStore;
-    
+
     interactor.dataManager = dataManager;
     interactor.output = presenter;
 
     videosListController.eventHandler = presenter;
-    
+
     presenter.interactor = interactor;
     presenter.wireframe = self;
     [presenter configurePresenterWithUserInterface:videosListController];
-    
+
     [nc pushViewController:videosListController animated:YES];
-    
+
     self.presenter = presenter;
     self.presentedController = nc;
     self.videosListController = videosListController;

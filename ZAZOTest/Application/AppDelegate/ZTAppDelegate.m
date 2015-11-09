@@ -2,7 +2,7 @@
 //  ZTAppDelegate.m
 //  ZAZOTest
 //
-//  Created by Vitaly Cherevaty on 10/29/15.
+//  Created by vc on 10/29/15.
 //  Copyright © 2015 Codeminders. All rights reserved.
 //
 
@@ -22,7 +22,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.appDependencies initialApplicationSetup:application launchOptions:launchOptions];
     [self.appDependencies installRootViewControllerIntoWindow:self.window];
-    
+
     [self.window makeKeyAndVisible];
     return YES;
 }

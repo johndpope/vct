@@ -2,7 +2,7 @@
 //  ZTVideoItem.m
 //  ZAZOTest
 //
-//  Created by Vitaly Cherevaty on 10/30/15.
+//  Created by vc on 10/30/15.
 //  Copyright © 2015 Codeminders. All rights reserved.
 //
 
@@ -17,7 +17,7 @@
     item.index = index;
     item.videoPath = videoPath;
     item.thumbnailPath = thumbnailPath;
-    
+
     return item;
 }
 
@@ -28,7 +28,7 @@
     if (self.videoPath) {
         url = [ZTFileHelpers absolutePathURLForFileName:self.videoPath];
     }
-    
+
     return url;
 }
 
@@ -39,7 +39,7 @@
     if (self.thumbnailPath) {
         url = [ZTFileHelpers absolutePathURLForFileName:self.thumbnailPath];
     }
-    
+
     return url;
 }
 

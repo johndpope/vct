@@ -2,7 +2,7 @@
 //  ZTVideosListVC.m
 //  ZAZOTest
 //
-//  Created by Vitaly Cherevaty on 10/29/15.
+//  Created by vc on 10/29/15.
 //  Copyright © 2015 Codeminders. All rights reserved.
 //
 
@@ -37,9 +37,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     self.title = @"ZAZO Test";
-    
+
     self.videoItemViews = @[self.videoItemView0,
                         self.videoItemView1,
                         self.videoItemView2,
@@ -48,9 +48,9 @@
                         self.videoItemView5,
                         self.videoItemView6,
                         self.videoItemView7];
-    
+
     NSAssert(self.videoItemViews.count == ZTVideoItemsCount, @"Video views count have to be equal to ZTVideoItemsCount");
-    
+
     NSUInteger i = 0;
     for (ZTVideoItemView *view in self.videoItemViews){
         view.index = i;
@@ -58,13 +58,13 @@
         [view setup];
         i++;
     }
-    
+
     self.videoRecorder = [[ZTVideoRecorder alloc] init];
     self.videoRecorder.delegate = self;
     [self.videoRecorder setupCaptureSessionWithPreviewView:self.videoPreviewView];
-    
+
     [self.eventHandler updateView];
-    
+
     [self hideRecordingIndicator];
 }
 
@@ -81,7 +81,7 @@
 - (void)updateVideoItemAtIndex:(NSUInteger)index videoItem:(ZTVideoItem*)videoItem
 {
     ZTVideoItemView *itemView = self.videoItemViews[index];
-    
+
     itemView.videoFileURL = [videoItem absoluteVideoPathURL];
     itemView.thumbnailImageFileURL = [videoItem absoluteThumbnailPathURL];
     [itemView setup];
@@ -124,11 +124,11 @@
 {
     if (!error) {
         [self.eventHandler videoRecordingSuccededWithVideoFileURL:outputFileURL];
-        
+
     } else {
         [self.eventHandler videoRecordingFailedWithError:error];
     }
-    
+
     [self hideRecordingIndicator];
 }
 

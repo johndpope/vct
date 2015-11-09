@@ -2,7 +2,7 @@
 //  ZTVideosListPresenter.m
 //  ZAZOTest
 //
-//  Created by Vitaly Cherevaty on 10/30/15.
+//  Created by vc on 10/30/15.
 //  Copyright © 2015 Codeminders. All rights reserved.
 //
 
@@ -46,7 +46,7 @@
 - (void)startVideoRecordingAtIndex:(NSUInteger)index
 {
     NSURL *fileURL = [ZTFileHelpers absolutePathURLForFileName:[ZTFileHelpers fileNameForVideoAtIndex:index]];
-    
+
     [self.userInterface startRecordingToFileURL:fileURL];
     self.isRecording = YES;
     self.recordingItemIndex = index;
@@ -71,11 +71,11 @@
 {
     NSString *thumbnailPath = [ZTFileHelpers fileNameForThumbnailAtIndex:self.recordingItemIndex];
     NSURL *thumbnailURL = [ZTFileHelpers absolutePathURLForFileName:thumbnailPath];
-    
+
     [ZTVideoRecorder saveThumbnailWithFileURL:thumbnailURL fromVideoURL:videoFileURL];
-    
+
     NSString *videoPath = [ZTFileHelpers fileNameForVideoAtIndex:self.recordingItemIndex];
-    
+
     [self.interactor updateVideoItemVideoPath:videoPath thumbnailPath:thumbnailPath atIndex:self.recordingItemIndex];
     self.isRecording = NO;
 }

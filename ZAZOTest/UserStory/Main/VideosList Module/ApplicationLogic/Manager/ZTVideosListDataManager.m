@@ -2,7 +2,7 @@
 //  ZTVideosListDataManager.m
 //  ZAZOTest
 //
-//  Created by Vitaly Cherevaty on 10/30/15.
+//  Created by vc on 10/30/15.
 //  Copyright © 2015 Codeminders. All rights reserved.
 //
 
@@ -18,20 +18,20 @@
 -(NSArray*)videoItems
 {
     NSArray *managedItems = [self.dataStore fetchAllEntries];
-    
+
     if (!managedItems) {
         return @[];
     }
-    
+
     NSMutableArray *items = [[NSMutableArray alloc] init];
     for (ZTManagedVideoItem *managedItem in managedItems) {
-        
+
         ZTVideoItem *item = [ZTVideoItem itemWithIndex:[managedItem.index unsignedIntegerValue]
                                           videoPath:managedItem.videoPath
                                  thumbnailPath:managedItem.thumbnailPath];
         [items addObject:item];
     }
-    
+
     return items;
 }
 
