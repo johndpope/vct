@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZTVideosListVC">
+            <connections>
+                <outlet property="videoItemView0" destination="HbH-Mf-mj5" id="rYR-0V-T7a"/>
+                <outlet property="videoItemView1" destination="HYo-K9-9rR" id="GwI-Ke-Suc"/>
+                <outlet property="videoItemView2" destination="f3M-MQ-433" id="D1r-6Q-JaY"/>
+                <outlet property="videoItemView3" destination="0Pv-VM-RCl" id="RLS-6O-cwX"/>
+                <outlet property="videoItemView4" destination="WO6-yP-yPq" id="7Hr-Z0-dCV"/>
+                <outlet property="videoItemView5" destination="05J-0X-L80" id="uOK-91-co6"/>
+                <outlet property="videoItemView6" destination="gvC-X5-caw" id="yEd-Et-fcR"/>
+                <outlet property="videoItemView7" destination="FYW-xw-i7f" id="WyX-8l-ZjA"/>
+                <outlet property="videoPreviewRecordingLabel" destination="sUV-BB-oQR" id="UZu-DQ-5UO"/>
+                <outlet property="videoPreviewView" destination="w3O-Mu-uvd" id="YQT-EX-gVb"/>
+                <outlet property="view" destination="HCX-7J-D1p" id="3eU-iE-M4A"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="HCX-7J-D1p">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xba-xb-KC4" userLabel="Container">
+                    <rect key="frame" x="0.0" y="80" width="320" height="428"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f3M-MQ-433" userLabel="Video Item View 2" customClass="ZTVideoItemView">
+                            <rect key="frame" x="213" y="8" width="102" height="136"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.92132536951783506" green="0.94329699667978717" blue="0.93356904001310492" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WO6-yP-yPq" userLabel="Video Item View 4" customClass="ZTVideoItemView">
+                            <rect key="frame" x="213" y="146" width="102" height="136"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.92132536951783506" green="0.94329699667978717" blue="0.93356904001310492" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="05J-0X-L80" userLabel="Video Item View 5" customClass="ZTVideoItemView">
+                            <rect key="frame" x="5" y="284" width="102" height="136"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.92132536951783506" green="0.94329699667978717" blue="0.93356904001310492" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gvC-X5-caw" userLabel="Video Item View 6" customClass="ZTVideoItemView">
+                            <rect key="frame" x="109" y="284" width="102" height="136"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.92132536951783506" green="0.94329699667978717" blue="0.93356904001310492" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FYW-xw-i7f" userLabel="Video Item View 7" customClass="ZTVideoItemView">
+                            <rect key="frame" x="213" y="284" width="102" height="136"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.92132536951783506" green="0.94329699667978717" blue="0.93356904001310492" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HbH-Mf-mj5" userLabel="Video Item View 0" customClass="ZTVideoItemView">
+                            <rect key="frame" x="5" y="8" width="102" height="136"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.92132536951783506" green="0.94329699667978717" blue="0.93356904001310492" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Pv-VM-RCl" userLabel="Video Item View 3" customClass="ZTVideoItemView">
+                            <rect key="frame" x="5" y="146" width="102" height="136"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.92132536951783506" green="0.94329699667978717" blue="0.93356904001310492" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HYo-K9-9rR" userLabel="Video Item View 1" customClass="ZTVideoItemView">
+                            <rect key="frame" x="109" y="8" width="102" height="136"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.92132536951783506" green="0.94329699667978717" blue="0.93356904001310492" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w3O-Mu-uvd" customClass="ZTVideoPreviewView">
+                            <rect key="frame" x="109" y="146" width="102" height="136"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.67469190369999998" green="0.69066858909999995" blue="0.68419494219999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recording..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUV-BB-oQR">
+                            <rect key="frame" x="114" y="256" width="92" height="21"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="0.30404701346590512" blue="0.41501888150693222" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.67469190369999998" green="0.69066858909999995" blue="0.68419494219999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="428" id="BP8-Oh-jak"/>
+                        <constraint firstAttribute="width" constant="320" id="TCv-tt-U18"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.67469190371709709" green="0.69066858905579398" blue="0.68419494223300947" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Xba-xb-KC4" firstAttribute="centerX" secondItem="HCX-7J-D1p" secondAttribute="centerX" id="AV9-yD-u3Y"/>
+                <constraint firstItem="Xba-xb-KC4" firstAttribute="top" secondItem="HCX-7J-D1p" secondAttribute="top" constant="80" id="ehY-6U-fYH"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="23" y="705"/>
+        </view>
+    </objects>
+</document>

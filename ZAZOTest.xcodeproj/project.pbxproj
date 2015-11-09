@@ -1,0 +1,885 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07165E351BE2904500080F88 /* ZTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07165E1C1BE2904400080F88 /* ZTAppDelegate.m */; };
+		07165E361BE2904500080F88 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07165E1F1BE2904400080F88 /* Info.plist */; };
+		07165E371BE2904500080F88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07165E201BE2904400080F88 /* main.m */; };
+		07165E381BE2904500080F88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07165E231BE2904400080F88 /* LaunchScreen.storyboard */; };
+		07165E391BE2904500080F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07165E261BE2904400080F88 /* Assets.xcassets */; };
+		07165E3A1BE2904500080F88 /* ZTVideosListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 07165E321BE2904500080F88 /* ZTVideosListVC.m */; };
+		07165E3B1BE2904500080F88 /* ZTVideosListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07165E331BE2904500080F88 /* ZTVideosListVC.xib */; };
+		07165E3E1BE2915100080F88 /* ZTRootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 07165E3D1BE2915100080F88 /* ZTRootWireframe.m */; };
+		07165E411BE2920C00080F88 /* ZTVideosListWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 07165E401BE2920C00080F88 /* ZTVideosListWireframe.m */; };
+		07165E441BE293E600080F88 /* ZTAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 07165E431BE293E600080F88 /* ZTAppDependencies.m */; };
+		07165E471BE2958E00080F88 /* ZTVideoItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07165E461BE2958E00080F88 /* ZTVideoItemView.m */; };
+		07165E4A1BE295C900080F88 /* ZTVideoPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07165E491BE295C900080F88 /* ZTVideoPreviewView.m */; };
+		075484981BE777F300BC01B6 /* ZTVideosListInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 075484971BE777F300BC01B6 /* ZTVideosListInteractorTests.m */; settings = {ASSET_TAGS = (); }; };
+		0754849A1BE78A0800BC01B6 /* ZTVideosListPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 075484991BE78A0800BC01B6 /* ZTVideosListPresenterTests.m */; settings = {ASSET_TAGS = (); }; };
+		0754849C1BE7916900BC01B6 /* ZTVideoItemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0754849B1BE7916900BC01B6 /* ZTVideoItemTests.m */; settings = {ASSET_TAGS = (); }; };
+		07DA59731BE3653F0088490C /* ZTVideosListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DA59721BE3653F0088490C /* ZTVideosListInteractor.m */; };
+		07DA59771BE36B960088490C /* ZTVideosListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DA59761BE36B960088490C /* ZTVideosListPresenter.m */; };
+		07DA597B1BE370A80088490C /* ZTVideosListModuleConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DA597A1BE370A80088490C /* ZTVideosListModuleConstants.m */; };
+		07DA59811BE37D9F0088490C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DA59801BE37D9F0088490C /* AVFoundation.framework */; };
+		07DA59851BE38AD70088490C /* Ship.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 07DA59841BE38AD70088490C /* Ship.mp4 */; };
+		07DA59891BE39D370088490C /* ZTVideosListDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DA59881BE39D370088490C /* ZTVideosListDataManager.m */; };
+		07DA598D1BE3A14C0088490C /* DATA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07DA598B1BE3A14C0088490C /* DATA.xcdatamodeld */; };
+		07DA59931BE3A2270088490C /* ZTManagedVideoItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DA59901BE3A2270088490C /* ZTManagedVideoItem+CoreDataProperties.m */; };
+		07DA59941BE3A2270088490C /* ZTManagedVideoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DA59921BE3A2270088490C /* ZTManagedVideoItem.m */; };
+		07DA59971BE3A2D50088490C /* ZTCoreDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DA59961BE3A2D50088490C /* ZTCoreDataStore.m */; };
+		07DA599B1BE3AA150088490C /* ZTVideoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DA599A1BE3AA150088490C /* ZTVideoItem.m */; };
+		07DA599F1BE3B68E0088490C /* ZTFileHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DA599E1BE3B68E0088490C /* ZTFileHelpers.m */; };
+		6A9AC67508D90497BCD51F8F /* libPods-ZAZOTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2359070EC965C3D4C9BD8E /* libPods-ZAZOTestTests.a */; };
+		A188DBE162C634712F7F8389 /* libPods-ZAZOTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF031F2573760E7341D65F64 /* libPods-ZAZOTest.a */; };
+		D8826BAE1BE748FB00BB5A53 /* ZTVideoRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = D8826BAD1BE748FB00BB5A53 /* ZTVideoRecorder.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07165DD61BE285EF00080F88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07165DB41BE285EE00080F88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07165DBB1BE285EE00080F88;
+			remoteInfo = ZAZOTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07165DBC1BE285EE00080F88 /* ZAZOTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZAZOTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07165DD51BE285EF00080F88 /* ZAZOTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZAZOTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07165DDB1BE285EF00080F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07165E1B1BE2904400080F88 /* ZTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTAppDelegate.h; sourceTree = "<group>"; };
+		07165E1C1BE2904400080F88 /* ZTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTAppDelegate.m; sourceTree = "<group>"; };
+		07165E1F1BE2904400080F88 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07165E201BE2904400080F88 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07165E241BE2904400080F88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07165E261BE2904400080F88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07165E311BE2904500080F88 /* ZTVideosListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVideosListVC.h; sourceTree = "<group>"; };
+		07165E321BE2904500080F88 /* ZTVideosListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTVideosListVC.m; sourceTree = "<group>"; };
+		07165E331BE2904500080F88 /* ZTVideosListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZTVideosListVC.xib; sourceTree = "<group>"; };
+		07165E3C1BE2915100080F88 /* ZTRootWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTRootWireframe.h; sourceTree = "<group>"; };
+		07165E3D1BE2915100080F88 /* ZTRootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTRootWireframe.m; sourceTree = "<group>"; };
+		07165E3F1BE2920C00080F88 /* ZTVideosListWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVideosListWireframe.h; sourceTree = "<group>"; };
+		07165E401BE2920C00080F88 /* ZTVideosListWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTVideosListWireframe.m; sourceTree = "<group>"; };
+		07165E421BE293E600080F88 /* ZTAppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTAppDependencies.h; sourceTree = "<group>"; };
+		07165E431BE293E600080F88 /* ZTAppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTAppDependencies.m; sourceTree = "<group>"; };
+		07165E451BE2958E00080F88 /* ZTVideoItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVideoItemView.h; sourceTree = "<group>"; };
+		07165E461BE2958E00080F88 /* ZTVideoItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTVideoItemView.m; sourceTree = "<group>"; };
+		07165E481BE295C800080F88 /* ZTVideoPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVideoPreviewView.h; sourceTree = "<group>"; };
+		07165E491BE295C900080F88 /* ZTVideoPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTVideoPreviewView.m; sourceTree = "<group>"; };
+		075484971BE777F300BC01B6 /* ZTVideosListInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTVideosListInteractorTests.m; sourceTree = "<group>"; };
+		075484991BE78A0800BC01B6 /* ZTVideosListPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTVideosListPresenterTests.m; sourceTree = "<group>"; };
+		0754849B1BE7916900BC01B6 /* ZTVideoItemTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTVideoItemTests.m; sourceTree = "<group>"; };
+		07DA59711BE3653F0088490C /* ZTVideosListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVideosListInteractor.h; sourceTree = "<group>"; };
+		07DA59721BE3653F0088490C /* ZTVideosListInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTVideosListInteractor.m; sourceTree = "<group>"; };
+		07DA59741BE365820088490C /* ZTVideosListInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTVideosListInteractorIO.h; sourceTree = "<group>"; };
+		07DA59751BE36B960088490C /* ZTVideosListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVideosListPresenter.h; sourceTree = "<group>"; };
+		07DA59761BE36B960088490C /* ZTVideosListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTVideosListPresenter.m; sourceTree = "<group>"; };
+		07DA59781BE36C190088490C /* ZTVideosListViewInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTVideosListViewInterface.h; sourceTree = "<group>"; };
+		07DA59791BE36F120088490C /* ZTVideosListModuleConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTVideosListModuleConstants.h; sourceTree = "<group>"; };
+		07DA597A1BE370A80088490C /* ZTVideosListModuleConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTVideosListModuleConstants.m; sourceTree = "<group>"; };
+		07DA597C1BE3751B0088490C /* ZTVideosListModuleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTVideosListModuleInterface.h; sourceTree = "<group>"; };
+		07DA59801BE37D9F0088490C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		07DA59841BE38AD70088490C /* Ship.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ship.mp4; sourceTree = "<group>"; };
+		07DA59871BE39D370088490C /* ZTVideosListDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVideosListDataManager.h; sourceTree = "<group>"; };
+		07DA59881BE39D370088490C /* ZTVideosListDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTVideosListDataManager.m; sourceTree = "<group>"; };
+		07DA598C1BE3A14C0088490C /* DATA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DATA.xcdatamodel; sourceTree = "<group>"; };
+		07DA598F1BE3A2270088490C /* ZTManagedVideoItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZTManagedVideoItem+CoreDataProperties.h"; sourceTree = "<group>"; };
+		07DA59901BE3A2270088490C /* ZTManagedVideoItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZTManagedVideoItem+CoreDataProperties.m"; sourceTree = "<group>"; };
+		07DA59911BE3A2270088490C /* ZTManagedVideoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTManagedVideoItem.h; sourceTree = "<group>"; };
+		07DA59921BE3A2270088490C /* ZTManagedVideoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTManagedVideoItem.m; sourceTree = "<group>"; };
+		07DA59951BE3A2D50088490C /* ZTCoreDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTCoreDataStore.h; sourceTree = "<group>"; };
+		07DA59961BE3A2D50088490C /* ZTCoreDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTCoreDataStore.m; sourceTree = "<group>"; };
+		07DA59991BE3AA150088490C /* ZTVideoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVideoItem.h; sourceTree = "<group>"; };
+		07DA599A1BE3AA150088490C /* ZTVideoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTVideoItem.m; sourceTree = "<group>"; };
+		07DA599D1BE3B68E0088490C /* ZTFileHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTFileHelpers.h; sourceTree = "<group>"; };
+		07DA599E1BE3B68E0088490C /* ZTFileHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTFileHelpers.m; sourceTree = "<group>"; };
+		6D772147C2E7AAE3C61097D4 /* Pods-ZAZOTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAZOTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZAZOTest/Pods-ZAZOTest.release.xcconfig"; sourceTree = "<group>"; };
+		850EAAB97456429E95138A03 /* Pods-ZAZOTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAZOTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZAZOTestTests/Pods-ZAZOTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		9915CDFBD6389FB6F6484E11 /* Pods-ZAZOTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAZOTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZAZOTestTests/Pods-ZAZOTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA2359070EC965C3D4C9BD8E /* libPods-ZAZOTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZAZOTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF031F2573760E7341D65F64 /* libPods-ZAZOTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZAZOTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8826BAC1BE748FB00BB5A53 /* ZTVideoRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTVideoRecorder.h; sourceTree = "<group>"; };
+		D8826BAD1BE748FB00BB5A53 /* ZTVideoRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTVideoRecorder.m; sourceTree = "<group>"; };
+		F7F9E5DB19CAF4601D4FCD46 /* Pods-ZAZOTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAZOTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZAZOTest/Pods-ZAZOTest.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07165DB91BE285EE00080F88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07DA59811BE37D9F0088490C /* AVFoundation.framework in Frameworks */,
+				A188DBE162C634712F7F8389 /* libPods-ZAZOTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07165DD21BE285EF00080F88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A9AC67508D90497BCD51F8F /* libPods-ZAZOTestTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07165DB31BE285EE00080F88 = {
+			isa = PBXGroup;
+			children = (
+				07165E181BE2904400080F88 /* ZAZOTest */,
+				07165DD81BE285EF00080F88 /* ZAZOTestTests */,
+				07165DBD1BE285EE00080F88 /* Products */,
+				72D6A9957A2859D74BDCC120 /* Pods */,
+				5DAE0AF896723B39BAC69A2A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		07165DBD1BE285EE00080F88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07165DBC1BE285EE00080F88 /* ZAZOTest.app */,
+				07165DD51BE285EF00080F88 /* ZAZOTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07165DD81BE285EF00080F88 /* ZAZOTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				075484971BE777F300BC01B6 /* ZTVideosListInteractorTests.m */,
+				075484991BE78A0800BC01B6 /* ZTVideosListPresenterTests.m */,
+				0754849B1BE7916900BC01B6 /* ZTVideoItemTests.m */,
+				07165DDB1BE285EF00080F88 /* Info.plist */,
+			);
+			path = ZAZOTestTests;
+			sourceTree = "<group>";
+		};
+		07165E181BE2904400080F88 /* ZAZOTest */ = {
+			isa = PBXGroup;
+			children = (
+				07165E191BE2904400080F88 /* Application */,
+				07165E221BE2904400080F88 /* Resources */,
+				07165E281BE2904400080F88 /* UserStory */,
+				07DA59821BE37DB20088490C /* Frameworks */,
+			);
+			path = ZAZOTest;
+			sourceTree = "<group>";
+		};
+		07165E191BE2904400080F88 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D8826BAA1BE748FB00BB5A53 /* Library */,
+				07DA599C1BE3B66E0088490C /* Helpers */,
+				07DA598A1BE3A1130088490C /* Store */,
+				07DA59981BE3AA150088490C /* Model */,
+				07165E1A1BE2904400080F88 /* AppDelegate */,
+				07165E1D1BE2904400080F88 /* AppDependencies */,
+				07165E1E1BE2904400080F88 /* BundleFiles */,
+				07165E211BE2904400080F88 /* RootWireframe */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		07165E1A1BE2904400080F88 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				07165E1B1BE2904400080F88 /* ZTAppDelegate.h */,
+				07165E1C1BE2904400080F88 /* ZTAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		07165E1D1BE2904400080F88 /* AppDependencies */ = {
+			isa = PBXGroup;
+			children = (
+				07165E421BE293E600080F88 /* ZTAppDependencies.h */,
+				07165E431BE293E600080F88 /* ZTAppDependencies.m */,
+			);
+			path = AppDependencies;
+			sourceTree = "<group>";
+		};
+		07165E1E1BE2904400080F88 /* BundleFiles */ = {
+			isa = PBXGroup;
+			children = (
+				07165E1F1BE2904400080F88 /* Info.plist */,
+				07165E201BE2904400080F88 /* main.m */,
+			);
+			path = BundleFiles;
+			sourceTree = "<group>";
+		};
+		07165E211BE2904400080F88 /* RootWireframe */ = {
+			isa = PBXGroup;
+			children = (
+				07165E3C1BE2915100080F88 /* ZTRootWireframe.h */,
+				07165E3D1BE2915100080F88 /* ZTRootWireframe.m */,
+			);
+			path = RootWireframe;
+			sourceTree = "<group>";
+		};
+		07165E221BE2904400080F88 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				07165E231BE2904400080F88 /* LaunchScreen.storyboard */,
+				07165E251BE2904400080F88 /* Images */,
+				07DA59831BE38AD70088490C /* Videos */,
+				07165E271BE2904400080F88 /* Localizations */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		07165E251BE2904400080F88 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				07165E261BE2904400080F88 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		07165E271BE2904400080F88 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		07165E281BE2904400080F88 /* UserStory */ = {
+			isa = PBXGroup;
+			children = (
+				07165E291BE2904400080F88 /* Main */,
+			);
+			path = UserStory;
+			sourceTree = "<group>";
+		};
+		07165E291BE2904400080F88 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				07165E2A1BE2904400080F88 /* VideosList Module */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		07165E2A1BE2904400080F88 /* VideosList Module */ = {
+			isa = PBXGroup;
+			children = (
+				07165E2B1BE2904400080F88 /* ApplicationLogic */,
+				07165E2D1BE2904400080F88 /* ModuleInterface */,
+				07165E2E1BE2904400080F88 /* UserInterface */,
+				07DA59791BE36F120088490C /* ZTVideosListModuleConstants.h */,
+				07DA597A1BE370A80088490C /* ZTVideosListModuleConstants.m */,
+			);
+			path = "VideosList Module";
+			sourceTree = "<group>";
+		};
+		07165E2B1BE2904400080F88 /* ApplicationLogic */ = {
+			isa = PBXGroup;
+			children = (
+				07DA59861BE39D180088490C /* Manager */,
+				07165E2C1BE2904400080F88 /* Interactor */,
+			);
+			path = ApplicationLogic;
+			sourceTree = "<group>";
+		};
+		07165E2C1BE2904400080F88 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				07DA59711BE3653F0088490C /* ZTVideosListInteractor.h */,
+				07DA59721BE3653F0088490C /* ZTVideosListInteractor.m */,
+				07DA59741BE365820088490C /* ZTVideosListInteractorIO.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		07165E2D1BE2904400080F88 /* ModuleInterface */ = {
+			isa = PBXGroup;
+			children = (
+				07DA597C1BE3751B0088490C /* ZTVideosListModuleInterface.h */,
+			);
+			path = ModuleInterface;
+			sourceTree = "<group>";
+		};
+		07165E2E1BE2904400080F88 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				07165E2F1BE2904400080F88 /* Presenter */,
+				07165E301BE2904400080F88 /* View */,
+				07165E341BE2904500080F88 /* Wireframe */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		07165E2F1BE2904400080F88 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				07DA59751BE36B960088490C /* ZTVideosListPresenter.h */,
+				07DA59761BE36B960088490C /* ZTVideosListPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		07165E301BE2904400080F88 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07165E311BE2904500080F88 /* ZTVideosListVC.h */,
+				07165E321BE2904500080F88 /* ZTVideosListVC.m */,
+				07165E331BE2904500080F88 /* ZTVideosListVC.xib */,
+				07165E451BE2958E00080F88 /* ZTVideoItemView.h */,
+				07165E461BE2958E00080F88 /* ZTVideoItemView.m */,
+				07165E481BE295C800080F88 /* ZTVideoPreviewView.h */,
+				07165E491BE295C900080F88 /* ZTVideoPreviewView.m */,
+				07DA59781BE36C190088490C /* ZTVideosListViewInterface.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		07165E341BE2904500080F88 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				07165E3F1BE2920C00080F88 /* ZTVideosListWireframe.h */,
+				07165E401BE2920C00080F88 /* ZTVideosListWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		07DA59821BE37DB20088490C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07DA59801BE37D9F0088490C /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07DA59831BE38AD70088490C /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				07DA59841BE38AD70088490C /* Ship.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		07DA59861BE39D180088490C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				07DA59871BE39D370088490C /* ZTVideosListDataManager.h */,
+				07DA59881BE39D370088490C /* ZTVideosListDataManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		07DA598A1BE3A1130088490C /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				07DA598E1BE3A20D0088490C /* Entities */,
+				07DA598B1BE3A14C0088490C /* DATA.xcdatamodeld */,
+				07DA59951BE3A2D50088490C /* ZTCoreDataStore.h */,
+				07DA59961BE3A2D50088490C /* ZTCoreDataStore.m */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		07DA598E1BE3A20D0088490C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				07DA598F1BE3A2270088490C /* ZTManagedVideoItem+CoreDataProperties.h */,
+				07DA59901BE3A2270088490C /* ZTManagedVideoItem+CoreDataProperties.m */,
+				07DA59911BE3A2270088490C /* ZTManagedVideoItem.h */,
+				07DA59921BE3A2270088490C /* ZTManagedVideoItem.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		07DA59981BE3AA150088490C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07DA59991BE3AA150088490C /* ZTVideoItem.h */,
+				07DA599A1BE3AA150088490C /* ZTVideoItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		07DA599C1BE3B66E0088490C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				07DA599D1BE3B68E0088490C /* ZTFileHelpers.h */,
+				07DA599E1BE3B68E0088490C /* ZTFileHelpers.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5DAE0AF896723B39BAC69A2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF031F2573760E7341D65F64 /* libPods-ZAZOTest.a */,
+				BA2359070EC965C3D4C9BD8E /* libPods-ZAZOTestTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72D6A9957A2859D74BDCC120 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7F9E5DB19CAF4601D4FCD46 /* Pods-ZAZOTest.debug.xcconfig */,
+				6D772147C2E7AAE3C61097D4 /* Pods-ZAZOTest.release.xcconfig */,
+				9915CDFBD6389FB6F6484E11 /* Pods-ZAZOTestTests.debug.xcconfig */,
+				850EAAB97456429E95138A03 /* Pods-ZAZOTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D8826BAA1BE748FB00BB5A53 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D8826BAB1BE748FB00BB5A53 /* Video */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		D8826BAB1BE748FB00BB5A53 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				D8826BAC1BE748FB00BB5A53 /* ZTVideoRecorder.h */,
+				D8826BAD1BE748FB00BB5A53 /* ZTVideoRecorder.m */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07165DBB1BE285EE00080F88 /* ZAZOTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07165DE91BE285EF00080F88 /* Build configuration list for PBXNativeTarget "ZAZOTest" */;
+			buildPhases = (
+				2DD709F03A346A7998369422 /* Check Pods Manifest.lock */,
+				07165DB81BE285EE00080F88 /* Sources */,
+				07165DB91BE285EE00080F88 /* Frameworks */,
+				07165DBA1BE285EE00080F88 /* Resources */,
+				AEDBFF12A9C1D7CCC0F74E82 /* Embed Pods Frameworks */,
+				D8DF82D470D6F5B2EF9A3ADE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZAZOTest;
+			productName = ZAZOTest;
+			productReference = 07165DBC1BE285EE00080F88 /* ZAZOTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07165DD41BE285EF00080F88 /* ZAZOTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07165DEC1BE285EF00080F88 /* Build configuration list for PBXNativeTarget "ZAZOTestTests" */;
+			buildPhases = (
+				BAB579ABFB88C76B0C40CB6D /* Check Pods Manifest.lock */,
+				07165DD11BE285EF00080F88 /* Sources */,
+				07165DD21BE285EF00080F88 /* Frameworks */,
+				07165DD31BE285EF00080F88 /* Resources */,
+				92E670BBF2DE6A8490F2D5A1 /* Embed Pods Frameworks */,
+				62D2274052361135126BEDFF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07165DD71BE285EF00080F88 /* PBXTargetDependency */,
+			);
+			name = ZAZOTestTests;
+			productName = ZAZOTestTests;
+			productReference = 07165DD51BE285EF00080F88 /* ZAZOTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07165DB41BE285EE00080F88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Codeminders;
+				TargetAttributes = {
+					07165DBB1BE285EE00080F88 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					07165DD41BE285EF00080F88 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 07165DBB1BE285EE00080F88;
+					};
+				};
+			};
+			buildConfigurationList = 07165DB71BE285EE00080F88 /* Build configuration list for PBXProject "ZAZOTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07165DB31BE285EE00080F88;
+			productRefGroup = 07165DBD1BE285EE00080F88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07165DBB1BE285EE00080F88 /* ZAZOTest */,
+				07165DD41BE285EF00080F88 /* ZAZOTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07165DBA1BE285EE00080F88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07165E3B1BE2904500080F88 /* ZTVideosListVC.xib in Resources */,
+				07165E361BE2904500080F88 /* Info.plist in Resources */,
+				07165E391BE2904500080F88 /* Assets.xcassets in Resources */,
+				07165E381BE2904500080F88 /* LaunchScreen.storyboard in Resources */,
+				07DA59851BE38AD70088490C /* Ship.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07165DD31BE285EF00080F88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DD709F03A346A7998369422 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		62D2274052361135126BEDFF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZAZOTestTests/Pods-ZAZOTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92E670BBF2DE6A8490F2D5A1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZAZOTestTests/Pods-ZAZOTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEDBFF12A9C1D7CCC0F74E82 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZAZOTest/Pods-ZAZOTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAB579ABFB88C76B0C40CB6D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D8DF82D470D6F5B2EF9A3ADE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZAZOTest/Pods-ZAZOTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07165DB81BE285EE00080F88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07165E441BE293E600080F88 /* ZTAppDependencies.m in Sources */,
+				07165E4A1BE295C900080F88 /* ZTVideoPreviewView.m in Sources */,
+				07165E411BE2920C00080F88 /* ZTVideosListWireframe.m in Sources */,
+				07DA59771BE36B960088490C /* ZTVideosListPresenter.m in Sources */,
+				07DA598D1BE3A14C0088490C /* DATA.xcdatamodeld in Sources */,
+				07DA59891BE39D370088490C /* ZTVideosListDataManager.m in Sources */,
+				07165E3E1BE2915100080F88 /* ZTRootWireframe.m in Sources */,
+				07DA599F1BE3B68E0088490C /* ZTFileHelpers.m in Sources */,
+				07165E3A1BE2904500080F88 /* ZTVideosListVC.m in Sources */,
+				07DA59971BE3A2D50088490C /* ZTCoreDataStore.m in Sources */,
+				07DA59931BE3A2270088490C /* ZTManagedVideoItem+CoreDataProperties.m in Sources */,
+				07DA59731BE3653F0088490C /* ZTVideosListInteractor.m in Sources */,
+				07DA599B1BE3AA150088490C /* ZTVideoItem.m in Sources */,
+				07165E371BE2904500080F88 /* main.m in Sources */,
+				07DA59941BE3A2270088490C /* ZTManagedVideoItem.m in Sources */,
+				07165E471BE2958E00080F88 /* ZTVideoItemView.m in Sources */,
+				07165E351BE2904500080F88 /* ZTAppDelegate.m in Sources */,
+				D8826BAE1BE748FB00BB5A53 /* ZTVideoRecorder.m in Sources */,
+				07DA597B1BE370A80088490C /* ZTVideosListModuleConstants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07165DD11BE285EF00080F88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0754849C1BE7916900BC01B6 /* ZTVideoItemTests.m in Sources */,
+				075484981BE777F300BC01B6 /* ZTVideosListInteractorTests.m in Sources */,
+				0754849A1BE78A0800BC01B6 /* ZTVideosListPresenterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07165DD71BE285EF00080F88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07165DBB1BE285EE00080F88 /* ZAZOTest */;
+			targetProxy = 07165DD61BE285EF00080F88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07165E231BE2904400080F88 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07165E241BE2904400080F88 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07165DE71BE285EF00080F88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		07165DE81BE285EF00080F88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07165DEA1BE285EF00080F88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7F9E5DB19CAF4601D4FCD46 /* Pods-ZAZOTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZAZOTest/Application/BundleFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ZAZOTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		07165DEB1BE285EF00080F88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D772147C2E7AAE3C61097D4 /* Pods-ZAZOTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZAZOTest/Application/BundleFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ZAZOTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		07165DED1BE285EF00080F88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9915CDFBD6389FB6F6484E11 /* Pods-ZAZOTestTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZAZOTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ZAZOTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZAZOTest.app/ZAZOTest";
+			};
+			name = Debug;
+		};
+		07165DEE1BE285EF00080F88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 850EAAB97456429E95138A03 /* Pods-ZAZOTestTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZAZOTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.ZAZOTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZAZOTest.app/ZAZOTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07165DB71BE285EE00080F88 /* Build configuration list for PBXProject "ZAZOTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07165DE71BE285EF00080F88 /* Debug */,
+				07165DE81BE285EF00080F88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07165DE91BE285EF00080F88 /* Build configuration list for PBXNativeTarget "ZAZOTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07165DEA1BE285EF00080F88 /* Debug */,
+				07165DEB1BE285EF00080F88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07165DEC1BE285EF00080F88 /* Build configuration list for PBXNativeTarget "ZAZOTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07165DED1BE285EF00080F88 /* Debug */,
+				07165DEE1BE285EF00080F88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		07DA598B1BE3A14C0088490C /* DATA.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				07DA598C1BE3A14C0088490C /* DATA.xcdatamodel */,
+			);
+			currentVersion = 07DA598C1BE3A14C0088490C /* DATA.xcdatamodel */;
+			path = DATA.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 07165DB41BE285EE00080F88 /* Project object */;
+}
